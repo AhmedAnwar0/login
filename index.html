@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Modern Login Page | AsmrProg</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h2>Create Account</h2>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registeration</span>
+                <div class="form-control ">
+                    <input type="text" autocomplete="off" placeholder="Name">
+                    <i class="suc fa fa-check-circle"></i>
+                    <i class="err fa fa-exclamation-circle"></i>
+                    <small></small>
+                </div>
+                <div class="form-control  ">
+                    <input id="signUpEm" autocomplete="off" type="email" placeholder="Email">
+                    <i class="suc fa fa-check-circle"></i>
+                    <i class="err fa fa-exclamation-circle"></i>
+                    <small></small>
+                </div>
+                <div class="form-control ">
+                    <input id="signUpPass" autocomplete="off" type="password" placeholder="Password">
+                    <i class="suc fa fa-check-circle"></i>
+                    <i class="err fa fa-exclamation-circle"></i>
+                    <small></small>
+                </div>
+                <button type="button" id="signUp">Sign Up</button>
+            </form>
+        </div>
+
+        <div class="form-container  sign-in">
+            <form>
+                <h2>Sign In</h2>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email & password</span>
+                <div class="form-control  ">
+                    <input autocomplete="off" id="signInEm" type="email" placeholder="Email">
+                    <i class="suc fa fa-check-circle"></i>
+                    <i class="err fa fa-exclamation-circle"></i>
+                    <small> </small>
+                </div>
+                <div class="form-control  ">
+                    <input id="signInPass" autocomplete="off" type="password" placeholder="Password">
+                    <i class="suc fa fa-check-circle"></i>
+                    <i class="err fa fa-exclamation-circle"></i>
+                    <small></small>
+                </div>
+                <!-- <a href="#">Forget Your Password?</a> -->
+                <button type="button" id="signIn">Sign In</button>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h2>Welcome Back!</h2>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h2>Hello, Friend!</h2>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="success-reg">
+        <div class="success-reg-massege">
+            <i class="fa-regular fa-circle-check"></i>
+            <h2>Registration Successful!</h2>
+            <button id="ok">Ok</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
